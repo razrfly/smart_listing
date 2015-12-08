@@ -31,7 +31,7 @@ class window.SmartListing
     @container = e
     @name = @container.attr("id")
     @loading = @container.find(SmartListing.config.class_name("loading"))
-    @content = @container.find(SmartListing.config.class_name("content"))
+    @content = @container.find(".smart-content")
     @status = $("#{SmartListing.config.class_name("status")} [data-#{SmartListing.config.data_attribute("main")}='#{@name}']")
     @confirmed = null
     @popovers = {}
